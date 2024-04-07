@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="icon" href="src/assets/icono.ico" type="image/x-icon">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="/src/scripts/main.js"></script>
+    <title>FitHub</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/assets/FitHubVerde.png" alt="company logo">
+        </div>
+        <nav class="navbar-list">
+            <a href="#inicio" class="navbar-link">Inicio</a>
+            <a href="#como-funciona" class="navbar-link">¿Cómo funciona?</a>
+            <a href="#planes" class="navbar-link">Planes</a>
+            <a href="#contactanos" class="navbar-link">Contáctanos</a>
+            <a href="login.html" class="navbar-link">Iniciar Sesión</a>
+            <a href="signup.html" class="navbar-link" id="sign-up">Crear Cuenta</a>
+        </nav>
+        <label for="check">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+    </header>
+    <section class="inicio" id="#inicio">
+        <div class="inicio-container">
+            <div class="inicio-izquierda">
+                <h2>Bienes personalizado y efectivo con</h2>
+                <h1>FIT HUB</h1>
+                <p>Alcanza tus metas de salud y fitness con nuestra plataforma integral.</p>
+                <div class="boton-empezar">
+                    <a href="signup.html">Empezar Ahora</a>
+                </div>
+            </div>
+            <div class="inicio-derecha">
+                <img src="src/assets/mujer-inicio.png">
+            </div>
+        </div>
+    </section>
+    <section class="como-funciona" id="#como-funciona">
+        <div class="como-funciona-container">
+            <div class="cm-izq-der">
+                <div class="cm-izquierda">
+                    <p>CREA TU EXPERIENCIA DE <b>ENTRENAMIENTO ONLINE</b> EN MINUTOS</p>
+                </div>
+                <div class="cm-derecha">
+                    <img src="src/assets/InsidePage.png">
+                </div>
+            </div>
+            <div class="cm-pasos">
+
+            </div>
+        </div>
+    </section>
+    <section class="planes" id="#planes">
+        <div class="planes-container">
+
+
+        </div>
+    </section>
+    <section class="contactanos" id="#contactanos">
+        <div class="contactanos-container">
+            <h2 class="title-section">Contáctanos</h2>
+            <div class="form-container">
+                <form id="contact-form" action="procesar_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required aria-required="true"
+                            placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required aria-required="true"
+                            placeholder="Introduce tu correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required aria-required="true"
+                            placeholder="Introduce tu mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mensaje-exito" style="display: none;">
+                    <p>Su consulta se ha enviado exitosamente. nos contactaremos con usted </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
