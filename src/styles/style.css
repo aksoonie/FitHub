@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root{
+    --primary-green: #8bb500d6;
+    --secondary-green:#C5D951;
+    --third-gree:#B1C868;
+    --primary-yellow: #FEFE8A;
+    --primary-white:#FFFF;
+    --gray-1:#C6C3C3;
+    --gray-2:#595959;
+    --black:#0D0D0D;
+}
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 200vh;
+    background-color:#fefe8a41;
+}
+section{
+    position:relative;
+    max-width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+/*TITULOS   */
+.title-section{
+    margin-left: 0;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5rem;
+    color: var(--primary-green);
+}
+
+/*HEADER*/
+  header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    transition:0.6s;
+    padding: 10px 50px;
+    z-index: 1000;
+    background-color:var(--primary-white);
+    border-style:solid;
+    border-color: #c6c3c33f;
+    border-width: 2.5px;
+    border-top: none; border-left: none; border-right: none;
+}
+#sign-up{
+    padding: 15px 50px;
+    width: 40px;
+    color: var(--primary-white);
+    background-color: var(--primary-green);
+    border-radius: 50px;
+}
+#sign-up:hover{
+    color: var(--primary-white);
+    background-color: var(--secondary-green);
+}
+#log-in{
+    padding: 15px 50px;
+    background-color: var(--primary-white);
+    border-radius: 50px;
+}
+#log-in:hover{
+    color: var(--primary-white);
+    background-color: var(--gray-1);
+}
+header .logo{
+    cursor: pointer;
+    position:relative;
+}
+
+header .logo img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+header .logo img:hover{
+    transform: scale(1.2);
+}
+
+header .navbar-list a{
+    position:relative;
+    list-style-type: none;
+    color:var(--gray-2);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+
+header .navbar-list a:not(:last-child){
+    position: relative;
+    margin-right: 30px;
+}
+
+header .navbar-list a:hover{
+    color: var(--primary-green);
+}
+/*INICIO*/
+
+
+/*¿COMO FUNCIONA?*/
+
+
+/*PLANES*/
+
+
+/*CONTACTANOS*/
+.contactanos-container {
+    width: 60%;
+    text-align: center;
+    text-align: center;
+    padding: 50px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-container {
+    text-align: center;
+    box-shadow: 0px 0px 1
+}
+
+.contact-container label{
+    color:var(--gray-2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-green);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff; /* Rellenado de blanco */
+    color: #555555; /* Letras matizadas */
+    font-size: 1em;
+    transition: border-color 0.3s; /* Transición suave del color del borde */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #333333; /* Borde al enfocar */
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #555555;
+    color: #ffffff;
+}
